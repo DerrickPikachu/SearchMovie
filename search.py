@@ -25,9 +25,15 @@ class Movie:
         print(output)
 
 
+# Path input
+itemPath = input()
+catPath = input()
+
 # Load file
-movieFile = open('u.item', 'r')
-catFile = open('u.genre', 'r')
+movieFile = open(itemPath, 'r', encoding='ISO-8859-1')
+catFile = open(catPath, 'r')
+# movieFile = open('u.item', 'r')
+# catFile = open('u.genre', 'r')
 
 # Build category mapping
 catMap = {}
